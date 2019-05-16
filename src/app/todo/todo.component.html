@@ -1,0 +1,16 @@
+<main>
+  <section>
+    <h1>TODO List</h1>
+    <p>A place to store the things you to do!</p>
+    <input type="text">
+    <ol>
+      <li *ngFor="let todo of todoList">
+        <button *ngIf="!todo.completed" class="complete">Completed</button>
+        {{todo.task}}
+        <i class="fas fa-times"></i>
+      </li>
+    </ol>
+    <input type="text">
+    <button class="add_btn">Add</button>
+  </section>
+</main>
